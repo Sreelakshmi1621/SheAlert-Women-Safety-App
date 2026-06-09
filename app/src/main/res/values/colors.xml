@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand Primary (Deep Purple) -->
+    <color name="brand_primary">#2B1463</color>
+
+    <!-- Slight lighter purple -->
+    <color name="brand_primary_variant">#3E1F87</color>
+
+    <!-- Accent Green (Tick color) -->
+    <color name="brand_accent">#4CAF50</color>
+
+    <!-- White -->
+    <color name="white">#FFFFFF</color>
+
+    <!-- Background -->
+    <color name="background_light">#F4F5F7</color>
+
+    <color name="background_soft">#F4F5F7</color>
+
+    <color name="drawer_header_bg">#3A1B6E</color>
+</resources>

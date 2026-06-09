@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#4A148C"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safety Check-In"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set arrival time and stay protected"
+            android:textColor="#E1BEE7"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnPickTime"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Select Arrival Time"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_purple_button"
+            android:backgroundTint="@null"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-- : --"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="#4A148C"
+            android:layout_marginBottom="40dp"/>
+
+        <Button
+            android:id="@+id/btnSafe"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="I AM SAFE"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_purple_button"
+            android:backgroundTint="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>

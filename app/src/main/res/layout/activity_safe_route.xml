@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- GOOGLE MAP -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- SEARCH BAR -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:startIconDrawable="@android:drawable/ic_menu_search"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusTopStart="22dp"
+        app:boxCornerRadiusTopEnd="22dp"
+        app:boxCornerRadiusBottomStart="22dp"
+        app:boxCornerRadiusBottomEnd="22dp"
+        app:elevation="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search here"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:background="@null"
+            android:padding="12dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- RISK CARD -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/riskCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="90dp"
+        android:visibility="gone"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtRiskLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RISK LEVEL"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtRiskMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Risk message here"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- ROUTE FLOATING BUTTON (White, clean) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:contentDescription="Route"
+        android:src="@android:drawable/ic_dialog_map"
+        app:backgroundTint="@android:color/white"
+        app:tint="#4A148C" />
+
+    <!-- ROUTE PANEL -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/routePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/fromLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="From"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/toLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="To"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"/>
+
+            <Button
+                android:id="@+id/btnFindRoute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find Route"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="#4A148C"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

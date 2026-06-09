@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    card_view:cardCornerRadius="14dp"
+    card_view:cardElevation="4dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- STATUS BADGE -->
+        <TextView
+            android:id="@+id/txtTrigger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MANUAL"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/bg_status_manual"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- TIME -->
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18 Feb 2026 • 01:32 PM"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- BATTERY -->
+        <TextView
+            android:id="@+id/txtBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battery: 100%"
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- LOCATION -->
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Location"
+            android:textColor="#4A148C"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

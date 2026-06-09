@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.SheAlert" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary brand color (slightly darker for night) -->
+        <item name="colorPrimary">@color/brand_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary accent -->
+        <item name="colorSecondary">@color/brand_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Dark background -->
+        <item name="android:colorBackground">#121212</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/brand_primary_variant</item>
+
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">#121212</item>
+
+    </style>
+
+    <style name="Theme.SheAlert" parent="Base.Theme.SheAlert" />
+
+</resources>
