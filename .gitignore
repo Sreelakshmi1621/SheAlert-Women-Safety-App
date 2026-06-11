@@ -16,3 +16,4 @@ local.properties
 # Firebase
 app/google-services.json
 gradle.properties
+.idea/markdown.xml
